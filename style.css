@@ -1,0 +1,70 @@
+.controle-form {
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+button[type="submit"] {
+    background-color: rgb(24, 136, 80);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 5px 5px 8px rgb(5, 240, 24);
+    
+}
+
+button[type="submit"]:hover {
+    background-color:#34cc8b;
+    cursor: pointer;
+}
+
+button[type="submit"]:active {
+    box-shadow:  inset 1px 1px 1px #444;
+}
+
+button[type="reset"] {
+    background-color: rgb(24, 136, 80);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 5px 5px 8px #8b0606;
+}
+button[type="reset"]:hover {
+    background-color:rgb(204, 59, 23);
+    cursor: pointer;
+}
+
+button[type="reset"]:active {
+    box-shadow:  inset 1px 1px 1px #444;
+}
+
+
+button[type="button"] {
+    background-color: rgb(99, 153, 126);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0);
+    
+}
+
+button[type="button"]:hover {
+    background-color:#80978d;
+    cursor: pointer;
+}
+
+button[type="button"]:active {
+    box-shadow:  inset 1px 1px 1px #444;
+}
+
+button:disabled,
+button:disabled:hover {
+    box-shadow: none;
+    background-color: #ccc;
+    cursor:not-allowed
+}
+
+input:invalid
