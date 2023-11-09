@@ -8,6 +8,84 @@
 </head>
 <body>
     <form action="">
+
+        <fieldset>
+            <legend>Turno:</legend>
+            <div class="controle-form">
+                <input type="radio" id="manha" name="turno">
+                <!-- botao tipo radio serve para apresentar campo de seleção de poucas opções. -->
+                <label for="manha">Manhã</label>
+            </div>
+
+            <div class="controle-form">
+                <input type="radio" id="tarde" name="turno">
+                <label for="tarde">Tarde</label>
+            </div>
+
+            <div class="controle-form">
+                <input type="radio" id="noite" name="turno">
+                <label for="noite">Noite</label>
+            </div>
+        </fieldset>
+
+        <div class="controle-form">    
+            <label for="pais">País:</label>
+            <select  id="pais">      <!-- Select serve para selecionar uma opção entre diversas opções. -->
+                <option value="AF">Afeganistão</option>
+                <option value="AR">Argentina</option>
+                <option value="BR" selected>Brasil</option>   <!-- opção padrão definida com "selected" -->
+                <option value="BU">Butão</option>
+                <option value="CA">Canadá</option>
+                <option value="EU">Estados Unidos</option>
+                <option value="FR">França</option>
+                <option value="IT">Itália</option>
+                <option value="RU">Russia</option>
+            </select>
+        </div>
+
+      <div class="controle-form">    <!-- Para Criar listas extensas, em que é permitido escrever no campo para pesquisar. -->
+        <label for="uf">UF:</label>
+        <input list="listaUF" id="uf">
+      </div>
+      <datalist id="listaUF"> 
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espirito Santo</option>
+        <option value="GO">Goias</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso Do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraiba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio De janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondonia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+        
+
+      </datalist>
+
+
+
+      <div class="controle-form">  <!-- criar botão de volume -->
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" min="0" max="100"  step="10">
+      </div>
+
         <div class="controle-form">
             <label for="codigo">Código:</label>
             <input type="number" id="codigo" value="55689740" readonly>
